@@ -1,0 +1,1562 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>The Transform Group: website redesign concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Overpass:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:'Atkinson Hyperlegible',system-ui,sans-serif;color:#15181B;background:#E9EAE6}
+a{color:inherit;text-decoration:none}
+a:hover{text-decoration:underline}
+.disp{font-family:'Overpass',system-ui,sans-serif;font-weight:900;letter-spacing:-0.02em;line-height:1.02}
+.in{height:52px;border:2px solid #15181B;border-radius:8px;padding:0 14px;font-family:inherit;font-size:17px;box-sizing:border-box;width:100%;background:#FFFFFF;color:#15181B}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #1F6FEB;outline-offset:2px}
+main[hidden]{display:none}
+.sitenav{gap:2px 16px!important}
+.siteright{margin-left:auto}
+.sitenav a{font-size:16px!important}
+.siteright a.disp{font-size:19px!important}
+.siteright a:not(.disp){padding:12px 16px!important}
+@media(max-width:820px){
+.sitenav{flex-wrap:nowrap!important;overflow-x:auto;width:100%;order:3;white-space:nowrap}
+}
+@media(max-width:700px){
+.sitenav{display:none!important}
+.siteright a:not(.disp){display:none!important}
+.siteright a.disp{font-size:18px!important}
+a[href="#/home"] .disp{font-size:19px!important}
+[style*="padding:14px 24px"]{padding:12px 16px!important}
+h1.disp{font-size:40px!important}
+h2.disp{font-size:32px!important}
+[style*="padding:96px 24px"],[style*="padding:88px 24px"],[style*="padding:80px 24px"]{padding-top:56px!important;padding-bottom:56px!important}
+[style*="padding:72px 24px"]{padding-top:44px!important;padding-bottom:48px!important}
+}
+#previewbar{background:#15181B;color:#E9EAE6;font-size:14px;line-height:1.4}
+#previewbar .inner{max-width:1240px;margin:0 auto;padding:10px 24px;display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;justify-content:space-between}
+#previewbar nav{display:flex;flex-wrap:wrap;gap:4px 16px}
+#previewbar nav a{padding:4px 0;border-bottom:2px solid transparent;font-weight:700}
+#previewbar nav a.on{border-bottom-color:#F6C21B;color:#F6C21B}
+</style>
+</head>
+<body>
+<div id="previewbar"><div class="inner">
+<span>Design concept for The Transform Group. Items in [brackets] are placeholders for real content. Forms are not live.</span>
+<nav aria-label="Preview pages"><a href="#/home" data-nav="home">Home</a><a href="#/sell" data-nav="sell">Sell your home</a><a href="#/invest" data-nav="invest">Invest</a><a href="#/about" data-nav="about">About and team</a><a href="#/contact" data-nav="contact">Contact</a><a href="#/mobile" data-nav="mobile">Mobile view</a></nav>
+</div></div>
+
+<main class="page" id="page-home" hidden>
+
+
+<div style="width:100%;display:flex;flex-direction:column;font-size:18px;line-height:1.6">
+
+<!-- Header -->
+<div style="background:#E9EAE6;border-bottom:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:14px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between">
+<a href="#/home" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+<svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="8" fill="#0B5D3B"/><rect x="3" y="3" width="32" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-width="1.8"/><path d="M10 21 L19 12 L28 21" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 20 V28 H24.5 V20" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linejoin="round"/></svg>
+<span class="disp" style="font-size:22px;letter-spacing:-0.01em">Transform Group</span>
+</a>
+<nav class="sitenav" style="display:flex;flex-wrap:wrap;gap:2px 18px;align-items:center">
+
+<a href="#/sell" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Sell your home</a>
+
+<a href="#/invest" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Invest</a>
+
+<a href="https://www.mysocietyrealestate.com/home_value" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Buy</a>
+
+<a href="https://www.sshomeremodel.com/" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Construction</a>
+
+<a href="#/about" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">About</a>
+
+<a href="#/contact" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Contact</a>
+
+</nav>
+<div class="siteright" style="display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center">
+<a href="tel:7327810111" class="disp" style="font-size:21px;letter-spacing:-0.01em;display:flex;align-items:center;gap:8px;min-height:46px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B5D3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>732.781.0111</a>
+<a href="#/sell" style="background:#15181B;color:#FFFFFF;font-weight:700;padding:12px 20px;border-radius:8px;min-height:46px;box-sizing:border-box;display:flex;align-items:center">Get my cash offer</a>
+</div>
+</div>
+</div>
+
+<!-- Hero -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:72px 24px 80px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+<div style="flex:1 1 560px;min-width:0;display:flex;flex-direction:column;gap:28px">
+<h1 class="disp" style="margin:0;font-size:72px">We buy houses in any condition. You skip the repairs, the fees, and the wait.</h1>
+<p style="margin:0;font-size:21px;max-width:600px;color:#33383D">Tell us about the property and we'll make a fair, transparent cash offer. Facing foreclosure, relocating, or just ready to move on, we make it simple.</p>
+<div style="display:flex;flex-direction:column;gap:10px;font-size:19px;font-weight:700">
+<div style="display:flex;gap:12px;align-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B5D3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>Sold as-is, no repairs or cleaning</div>
+<div style="display:flex;gap:12px;align-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B5D3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>No fees and no surprises in your offer</div>
+<div style="display:flex;gap:12px;align-items:center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B5D3B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>We close on your timeline</div>
+</div>
+</div>
+
+<!-- The sign -->
+<div style="flex:1 1 440px;max-width:520px;min-width:0;display:flex;flex-direction:column;align-items:flex-start">
+<div style="margin-left:28px;background:#0B5D3B;color:#FFFFFF;border:3px solid #FFFFFF;outline:3px solid #0B5D3B;border-bottom:none;border-radius:8px 8px 0 0;padding:6px 18px;font-family:'Overpass',system-ui,sans-serif;font-weight:800;font-size:18px">Exit 1</div>
+<div style="width:100%;background:#0B5D3B;color:#FFFFFF;border-radius:16px;padding:12px;box-sizing:border-box;box-shadow:0 10px 0 #15181B">
+<div style="border:4px solid #FFFFFF;border-radius:8px;padding:28px;display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:16px;justify-content:space-between;align-items:flex-start">
+<div style="display:flex;flex-direction:column;gap:6px">
+<div class="disp" style="font-size:38px;letter-spacing:-0.01em">Sell Your House</div>
+<div style="font-size:18px;color:#DCEFE4">Cash offer for any property in New Jersey</div>
+</div>
+<svg width="48" height="48" viewBox="0 0 44 44" aria-hidden="true" style="flex:none"><path d="M22 4 L37 24 H27 V40 H17 V24 H7 Z" fill="#FFFFFF"/></svg>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px">
+<label for="hero-address" style="font-weight:700;font-size:16px">Where's the property?</label>
+<input id="hero-address" class="in" type="text" placeholder="Street address, town, NJ">
+</div>
+<a href="#/sell" style="background:#F6C21B;color:#15181B;font-weight:800;font-size:19px;height:56px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none">Get my cash offer</a>
+<div style="border-top:3px dashed #FFFFFF;padding-top:18px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline;justify-content:space-between">
+<span style="font-size:17px">Prefer to talk it through?</span>
+<a href="tel:7327810111" class="disp" style="font-size:30px;color:#F6C21B;letter-spacing:-0.01em">732.781.0111</a>
+</div>
+</div>
+</div>
+<div style="font-size:15px;color:#4A4F55;margin-top:22px">No obligation to sell. Two quick steps, then a member of our team contacts you.</div>
+</div>
+</div>
+</div>
+
+<!-- Benefits band -->
+<div style="background:#F6C21B;color:#15181B;border-top:2px solid #15181B;border-bottom:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:0 24px;box-sizing:border-box;display:flex;flex-wrap:wrap">
+
+<div class="disp" style="flex:1 1 200px;padding:22px 20px;font-size:22px;letter-spacing:-0.01em;border-left:3px solid #15181B;box-sizing:border-box">No repairs</div>
+
+<div class="disp" style="flex:1 1 200px;padding:22px 20px;font-size:22px;letter-spacing:-0.01em;border-left:3px solid #15181B;box-sizing:border-box">No fees</div>
+
+<div class="disp" style="flex:1 1 200px;padding:22px 20px;font-size:22px;letter-spacing:-0.01em;border-left:3px solid #15181B;box-sizing:border-box">Hassle free</div>
+
+<div class="disp" style="flex:1 1 200px;padding:22px 20px;font-size:22px;letter-spacing:-0.01em;border-left:3px solid #15181B;box-sizing:border-box">Any condition</div>
+
+<div class="disp" style="flex:1 1 200px;padding:22px 20px;font-size:22px;letter-spacing:-0.01em;border-left:3px solid #15181B;box-sizing:border-box">Your closing date</div>
+
+</div>
+</div>
+
+<!-- Situations -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start">
+<div style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:20px">
+<h2 class="disp" style="margin:0;font-size:48px">Whatever brought you here, we can work with it.</h2>
+<p style="margin:0;color:#33383D;max-width:420px">For more than 10 years we've helped New Jersey families through hard situations. Find yours, or just call.</p>
+<a href="tel:7327810111" class="disp" style="font-size:28px;color:#0B5D3B;letter-spacing:-0.01em">732.781.0111</a>
+</div>
+<div style="flex:2 1 560px;min-width:0;display:flex;flex-direction:column">
+
+<a href="#/sell" style="display:flex;flex-wrap:wrap;gap:6px 32px;align-items:baseline;padding:22px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="flex:1 1 220px;font-size:28px;letter-spacing:-0.01em">You inherited a property</span>
+<span style="flex:2 1 280px;color:#33383D;font-size:18px">Skip the cleanout and the repairs. We buy inherited homes as-is.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-wrap:wrap;gap:6px 32px;align-items:baseline;padding:22px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="flex:1 1 220px;font-size:28px;letter-spacing:-0.01em">You're facing foreclosure</span>
+<span style="flex:2 1 280px;color:#33383D;font-size:18px">We help homeowners in pre-foreclosure and lis pendens find a way forward.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-wrap:wrap;gap:6px 32px;align-items:baseline;padding:22px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="flex:1 1 220px;font-size:28px;letter-spacing:-0.01em">The house needs work</span>
+<span style="flex:2 1 280px;color:#33383D;font-size:18px">No contractors and no repair bills. We buy houses in any condition.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-wrap:wrap;gap:6px 32px;align-items:baseline;padding:22px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="flex:1 1 220px;font-size:28px;letter-spacing:-0.01em">You're relocating</span>
+<span style="flex:2 1 280px;color:#33383D;font-size:18px">Sell on your timeline. We even help with your move.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-wrap:wrap;gap:6px 32px;align-items:baseline;padding:22px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="flex:1 1 220px;font-size:28px;letter-spacing:-0.01em">Money is tight</span>
+<span style="flex:2 1 280px;color:#33383D;font-size:18px">A quick, fair sale can lift the weight, with no hidden fees.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-wrap:wrap;gap:6px 32px;align-items:baseline;padding:22px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="flex:1 1 220px;font-size:28px;letter-spacing:-0.01em">You're not sure yet</span>
+<span style="flex:2 1 280px;color:#33383D;font-size:18px">Tell us what's going on. There's no obligation to sell.</span>
+</a>
+
+<div style="border-top:3px solid #15181B"></div>
+</div>
+</div>
+</div>
+
+<!-- Process: the road -->
+<div style="background:#22262B;color:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:56px">
+<h2 class="disp" style="margin:0;font-size:48px;max-width:760px">Four steps from first call to cash in hand.</h2>
+<div style="border-top:6px dashed #F6C21B"></div>
+<div style="display:flex;flex-wrap:wrap;gap:40px 32px;margin-top:-24px">
+
+<div style="flex:1 1 240px;min-width:0;display:flex;flex-direction:column;gap:12px">
+<div class="disp" style="font-size:88px;color:#F6C21B;line-height:0.9">1</div>
+<h3 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em;line-height:1.1">We find your solution</h3>
+<p style="margin:0;color:#C9CDC2;font-size:17px">Financial struggles, an inherited property, or needed repairs: whatever your situation, we help you find a fast, reliable way to sell.</p>
+</div>
+
+<div style="flex:1 1 240px;min-width:0;display:flex;flex-direction:column;gap:12px">
+<div class="disp" style="font-size:88px;color:#F6C21B;line-height:0.9">2</div>
+<h3 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em;line-height:1.1">Receive a fair cash offer</h3>
+<p style="margin:0;color:#C9CDC2;font-size:17px">After assessing your property and understanding your goals, we present a transparent cash offer with no hidden fees or surprises.</p>
+</div>
+
+<div style="flex:1 1 240px;min-width:0;display:flex;flex-direction:column;gap:12px">
+<div class="disp" style="font-size:88px;color:#F6C21B;line-height:0.9">3</div>
+<h3 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em;line-height:1.1">We handle the details</h3>
+<p style="margin:0;color:#C9CDC2;font-size:17px">We manage the paperwork, coordinate with title companies, and guide you through every step.</p>
+</div>
+
+<div style="flex:1 1 240px;min-width:0;display:flex;flex-direction:column;gap:12px">
+<div class="disp" style="font-size:88px;color:#F6C21B;line-height:0.9">4</div>
+<h3 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em;line-height:1.1">Close and move forward</h3>
+<p style="margin:0;color:#C9CDC2;font-size:17px">Once you accept, we close on your timeline. You walk away with cash in hand, and we assist with relocation.</p>
+</div>
+
+</div>
+<a href="#/contact" style="background:#F6C21B;color:#15181B;font-weight:800;padding:14px 26px;border-radius:8px;min-height:52px;box-sizing:border-box;display:flex;align-items:center;align-self:flex-start;text-decoration:none">Book an appointment</a>
+</div>
+</div>
+
+<!-- Proof -->
+<div style="background:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-wrap:wrap;gap:48px;align-items:center">
+<div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:24px">
+<h2 class="disp" style="margin:0;font-size:48px">Homeowners we've helped move forward.</h2>
+<p class="disp" style="margin:0;font-size:30px;line-height:1.2;letter-spacing:-0.01em;font-weight:800;color:#0B5D3B">[Featured testimonial: 2 to 3 sentences from a real seller about their situation, how fast it closed, and how it felt.]</p>
+<div style="display:flex;flex-direction:column"><span style="font-weight:700">[First name, Town, NJ]</span><span style="color:#4A4F55;font-size:16px">[Their situation, for example inherited property]</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:10px">
+
+<div style="border:2px dashed #8A8F94;border-radius:8px;padding:10px 16px;font-weight:700;font-size:15px;color:#4A4F55">[Google rating] and [N] reviews</div>
+
+<div style="border:2px dashed #8A8F94;border-radius:8px;padding:10px 16px;font-weight:700;font-size:15px;color:#4A4F55">[BBB rating, if accredited]</div>
+
+<div style="border:2px dashed #8A8F94;border-radius:8px;padding:10px 16px;font-weight:700;font-size:15px;color:#4A4F55">[Zillow or Facebook rating]</div>
+
+</div>
+</div>
+<div style="flex:1 1 440px;min-width:0;aspect-ratio:16/10;border-radius:16px;background:#22262B;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px">
+<button aria-label="Play video testimonial" style="width:80px;height:80px;border-radius:40px;border:none;background:#F6C21B;display:flex;align-items:center;justify-content:center;padding:0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M9 5 L25 15 L9 25 Z" fill="#15181B"/></svg></button>
+<span style="color:#C9CDC2;font-size:15px">[Video testimonial, 60 to 90 seconds]</span>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:32px">
+
+<div style="flex:1 1 320px;min-width:0;border-top:3px solid #15181B;padding-top:20px;display:flex;flex-direction:column;gap:12px">
+<p style="margin:0;font-size:20px">[Real testimonial from a seller facing foreclosure or needing repairs done.]</p>
+<div style="display:flex;flex-direction:column"><span style="font-weight:700">[First name, Town, NJ]</span><span style="color:#4A4F55;font-size:16px">[Their situation]</span></div>
+</div>
+
+<div style="flex:1 1 320px;min-width:0;border-top:3px solid #15181B;padding-top:20px;display:flex;flex-direction:column;gap:12px">
+<p style="margin:0;font-size:20px">[Real testimonial that mentions the team by name.]</p>
+<div style="display:flex;flex-direction:column"><span style="font-weight:700">[First name, Town, NJ]</span><span style="color:#4A4F55;font-size:16px">[Their situation]</span></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Versus -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+<h2 class="disp" style="margin:0;font-size:48px">Selling to us, or selling the traditional way.</h2>
+<p style="margin:0;color:#33383D">A cash sale isn't right for everyone. Here's an honest side-by-side so you can choose what fits.</p>
+</div>
+<div style="border:3px solid #15181B;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;background:#FFFFFF">
+<div style="display:flex;flex-wrap:wrap">
+<div style="flex:1 1 200px;padding:18px 24px"></div>
+<div class="disp" style="flex:1 1 260px;padding:18px 24px;background:#0B5D3B;color:#FFFFFF;font-size:24px;letter-spacing:-0.01em">Transform Group</div>
+<div class="disp" style="flex:1 1 260px;padding:18px 24px;font-size:24px;letter-spacing:-0.01em">Traditional sale</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;border-top:2px solid #C9CBC4">
+<div style="flex:1 1 200px;padding:18px 24px;font-weight:700">Repairs and cleaning</div>
+<div style="flex:1 1 260px;padding:18px 24px;background:#0B5D3B;color:#FFFFFF">None. We buy in any condition, as-is.</div>
+<div style="flex:1 1 260px;padding:18px 24px;color:#4A4F55">Often needed before listing</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;border-top:2px solid #C9CBC4">
+<div style="flex:1 1 200px;padding:18px 24px;font-weight:700">Agent commissions and fees</div>
+<div style="flex:1 1 260px;padding:18px 24px;background:#0B5D3B;color:#FFFFFF">None, and no hidden fees</div>
+<div style="flex:1 1 260px;padding:18px 24px;color:#4A4F55">Usually paid by the seller</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;border-top:2px solid #C9CBC4">
+<div style="flex:1 1 200px;padding:18px 24px;font-weight:700">Closing date</div>
+<div style="flex:1 1 260px;padding:18px 24px;background:#0B5D3B;color:#FFFFFF">Your timeline</div>
+<div style="flex:1 1 260px;padding:18px 24px;color:#4A4F55">Depends on the buyer and their financing</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;border-top:2px solid #C9CBC4">
+<div style="flex:1 1 200px;padding:18px 24px;font-weight:700">Certainty</div>
+<div style="flex:1 1 260px;padding:18px 24px;background:#0B5D3B;color:#FFFFFF">A transparent cash offer</div>
+<div style="flex:1 1 260px;padding:18px 24px;color:#4A4F55">Deals can fall through</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;border-top:2px solid #C9CBC4">
+<div style="flex:1 1 200px;padding:18px 24px;font-weight:700">Sale price</div>
+<div style="flex:1 1 260px;padding:18px 24px;background:#0B5D3B;color:#FFFFFF">A cash offer that reflects the property's condition</div>
+<div style="flex:1 1 260px;padding:18px 24px;color:#4A4F55">Potentially higher on the open market, after costs and time</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Mid CTA -->
+<div style="background:#0B5D3B;color:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:32px 48px;align-items:center">
+<h2 class="disp" style="margin:0;flex:1 1 340px;font-size:40px">See what we could offer for your house.</h2>
+<div style="flex:2 1 600px;display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end">
+<div style="flex:2 1 230px;display:flex;flex-direction:column;gap:6px"><label for="mid-address" style="font-weight:700;font-size:16px">Property address</label><input id="mid-address" class="in" type="text" placeholder="Street address, town, NJ"></div>
+<div style="flex:1 1 170px;display:flex;flex-direction:column;gap:6px"><label for="mid-phone" style="font-weight:700;font-size:16px">Phone</label><input id="mid-phone" class="in" type="tel" placeholder="(555) 555-5555"></div>
+<a href="#/sell" style="flex:1 1 190px;background:#F6C21B;color:#15181B;font-weight:800;font-size:18px;height:52px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none">Get my cash offer</a>
+</div>
+</div>
+</div>
+
+<!-- Work -->
+<div style="background:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+<h2 class="disp" style="margin:0;font-size:48px">After we buy, we transform.</h2>
+<p style="margin:0;color:#33383D">We take outdated homes and turn them into modern, contemporary ones that bring new life to New Jersey neighborhoods.</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:32px">
+
+<div style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:6px;border-radius:12px;overflow:hidden">
+<div style="flex:1;height:260px;background:#BFC2BA;display:flex;align-items:flex-end;padding:12px;box-sizing:border-box"><span style="background:#15181B;color:#FFFFFF;font-weight:700;font-size:15px;padding:4px 12px;border-radius:6px">Before</span></div>
+<div style="flex:1;height:260px;background:#D5D8CF;display:flex;align-items:flex-end;padding:12px;box-sizing:border-box"><span style="background:#F6C21B;color:#15181B;font-weight:700;font-size:15px;padding:4px 12px;border-radius:6px">After</span></div>
+</div>
+<div style="display:flex;flex-direction:column"><span class="disp" style="font-size:24px;letter-spacing:-0.01em">[Town], NJ</span><span style="color:#4A4F55;font-size:16px">[Property type] and [scope of work]</span></div>
+</div>
+
+<div style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:6px;border-radius:12px;overflow:hidden">
+<div style="flex:1;height:260px;background:#BFC2BA;display:flex;align-items:flex-end;padding:12px;box-sizing:border-box"><span style="background:#15181B;color:#FFFFFF;font-weight:700;font-size:15px;padding:4px 12px;border-radius:6px">Before</span></div>
+<div style="flex:1;height:260px;background:#D5D8CF;display:flex;align-items:flex-end;padding:12px;box-sizing:border-box"><span style="background:#F6C21B;color:#15181B;font-weight:700;font-size:15px;padding:4px 12px;border-radius:6px">After</span></div>
+</div>
+<div style="display:flex;flex-direction:column"><span class="disp" style="font-size:24px;letter-spacing:-0.01em">[Town], NJ</span><span style="color:#4A4F55;font-size:16px">[Property type] and [scope of work]</span></div>
+</div>
+
+<div style="flex:1 1 340px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<div style="display:flex;gap:6px;border-radius:12px;overflow:hidden">
+<div style="flex:1;height:260px;background:#BFC2BA;display:flex;align-items:flex-end;padding:12px;box-sizing:border-box"><span style="background:#15181B;color:#FFFFFF;font-weight:700;font-size:15px;padding:4px 12px;border-radius:6px">Before</span></div>
+<div style="flex:1;height:260px;background:#D5D8CF;display:flex;align-items:flex-end;padding:12px;box-sizing:border-box"><span style="background:#F6C21B;color:#15181B;font-weight:700;font-size:15px;padding:4px 12px;border-radius:6px">After</span></div>
+</div>
+<div style="display:flex;flex-direction:column"><span class="disp" style="font-size:24px;letter-spacing:-0.01em">[Town], NJ</span><span style="color:#4A4F55;font-size:16px">[Property type] and [scope of work]</span></div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Investors: departures board -->
+<div style="background:#22262B;color:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-wrap:wrap;gap:24px 48px;align-items:flex-end;justify-content:space-between">
+<div style="flex:1 1 480px;display:flex;flex-direction:column;gap:14px">
+<div style="align-self:flex-start;background:#0B5D3B;border:3px solid #FFFFFF;border-radius:8px;padding:4px 16px;font-family:'Overpass',system-ui,sans-serif;font-weight:800;font-size:18px">Exit 2</div>
+<h2 class="disp" style="margin:0;font-size:48px">Put your capital behind the next renovation.</h2>
+<p style="margin:0;color:#C9CDC2;max-width:620px">Joint-venture deals on New Jersey renovation and redevelopment projects. Every opportunity lists its projected after-repair value (ARV) and the capital required.</p>
+</div>
+<a href="#/invest" style="background:#F6C21B;color:#15181B;font-weight:800;padding:14px 26px;border-radius:8px;min-height:52px;box-sizing:border-box;display:flex;align-items:center;text-decoration:none">See all opportunities</a>
+</div>
+<div style="border:3px solid #FFFFFF;border-radius:12px;overflow:hidden;display:flex;flex-direction:column">
+<div style="display:flex;flex-wrap:wrap;gap:4px 16px;padding:14px 24px;background:#0B5D3B;font-weight:700;font-size:16px">
+<span style="flex:2 1 200px">Location</span><span style="flex:1 1 130px">Type</span><span style="flex:1 1 130px">Projected ARV</span><span style="flex:1 1 130px">Capital needed</span><span style="flex:1 1 150px"></span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Newark, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">3 Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$950K to $1M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$200K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Bridgewater, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$1.2M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$150K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Westfield, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$2.25M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$200K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Paramus, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$2.3M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$150K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Demarest, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$1.9M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$200K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+</div>
+<div style="font-size:15px;color:#A9AFA3">ARV = after-repair value. Figures are projections and subject to change.</div>
+</div>
+</div>
+
+<!-- Founder -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+<div style="flex:0 1 380px;min-width:260px;aspect-ratio:4/5;border-radius:12px;background:#C9CCC3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px">
+<span class="disp" style="font-size:64px;color:#6B7076">WS</span>
+<span style="font-size:15px;color:#4A4F55">Photo of Willie Stevens</span>
+</div>
+<div style="flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:22px">
+<h2 class="disp" style="margin:0;font-size:44px">Real estate has the power to change lives.</h2>
+<p style="margin:0;font-size:20px;color:#33383D">[A short note in Willie's own words: why he started The Transform Group and what a homeowner can expect when they call.]</p>
+<div style="display:flex;flex-direction:column"><span class="disp" style="font-size:24px;letter-spacing:-0.01em">Willie Stevens</span><span style="color:#4A4F55">CEO, The Transform Group</span></div>
+<div style="border-top:3px solid #15181B;padding-top:18px;display:flex;flex-wrap:wrap;gap:6px 32px;font-size:16px;color:#33383D">
+<span>[Office address, town, NJ]</span><span>[Licenses or accreditations, if any]</span>
+</div>
+</div>
+</div>
+</div>
+
+<!-- FAQ -->
+<div style="background:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:96px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+<div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:16px">
+<h2 class="disp" style="margin:0;font-size:44px">Questions we hear most.</h2>
+<p style="margin:0;color:#33383D">Still unsure? Call <a href="tel:7327810111" style="font-weight:700;text-decoration:underline">732.781.0111</a> and ask us directly.</p>
+</div>
+<div style="flex:2 1 520px;min-width:0;display:flex;flex-direction:column">
+
+<div style="border-top:3px solid #15181B;padding:22px 0;display:flex;flex-direction:column;gap:8px">
+<h3 class="disp" style="margin:0;font-size:24px;letter-spacing:-0.01em;line-height:1.15">Do I have to make repairs or clean up?</h3>
+<p style="margin:0;color:#33383D;font-size:18px">No. We buy houses in any condition, so you can sell as-is.</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:22px 0;display:flex;flex-direction:column;gap:8px">
+<h3 class="disp" style="margin:0;font-size:24px;letter-spacing:-0.01em;line-height:1.15">Are there any fees or commissions?</h3>
+<p style="margin:0;color:#33383D;font-size:18px">No. Our offer is transparent, with no hidden fees or surprises.</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:22px 0;display:flex;flex-direction:column;gap:8px">
+<h3 class="disp" style="margin:0;font-size:24px;letter-spacing:-0.01em;line-height:1.15">How do you come up with your offer?</h3>
+<p style="margin:0;color:#33383D;font-size:18px">[Explain in plain words: we look at the property's condition, location, and the work needed, and you see the number and terms up front with no pressure to accept.]</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:22px 0;display:flex;flex-direction:column;gap:8px">
+<h3 class="disp" style="margin:0;font-size:24px;letter-spacing:-0.01em;line-height:1.15">How fast can we close?</h3>
+<p style="margin:0;color:#33383D;font-size:18px">On your timeline. If you need to move quickly, we can. If you need more time, we can work with that too.</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:22px 0;display:flex;flex-direction:column;gap:8px">
+<h3 class="disp" style="margin:0;font-size:24px;letter-spacing:-0.01em;line-height:1.15">What if I'm facing foreclosure or inherited the property?</h3>
+<p style="margin:0;color:#33383D;font-size:18px">We help homeowners in these situations, from pre-foreclosure and lis pendens to inherited homes. Call us and we'll talk through your options.</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:22px 0;display:flex;flex-direction:column;gap:8px">
+<h3 class="disp" style="margin:0;font-size:24px;letter-spacing:-0.01em;line-height:1.15">Can I list with an agent instead?</h3>
+<p style="margin:0;color:#33383D;font-size:18px">Yes. If you'd rather test the open market, we can connect you with our Society Real Estate licensed agents.</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:22px 0;display:flex;flex-direction:column;gap:8px">
+<h3 class="disp" style="margin:0;font-size:24px;letter-spacing:-0.01em;line-height:1.15">Is there any obligation?</h3>
+<p style="margin:0;color:#33383D;font-size:18px">No. There is no obligation to sell. A member of our team will simply learn about your property and your situation.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Final call -->
+<div style="background:#F6C21B;color:#15181B;border-top:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:80px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<div class="disp" style="font-size:36px">Call us today.</div>
+<a href="tel:7327810111" class="disp" style="font-size:clamp(44px,9vw,128px);line-height:0.95;letter-spacing:-0.03em;text-decoration:none">732.781.0111</a>
+<div style="display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;font-size:20px">
+<span>Our team will contact you promptly.</span>
+<a href="#/contact" style="background:#15181B;color:#FFFFFF;font-weight:700;padding:14px 26px;border-radius:8px;min-height:52px;box-sizing:border-box;display:flex;align-items:center;text-decoration:none">Or send a message</a>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<div style="background:#22262B;color:#C9CDC2;font-size:16px">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+<div style="flex:2 1 320px;display:flex;flex-direction:column;gap:14px">
+<div class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">Transform Group</div>
+<p style="margin:0;max-width:440px">We help homeowners with flexible solutions, whether through a fast, hassle-free cash sale or by listing their property with our Society Real Estate licensed agents. We also offer investment opportunities for buyers looking to grow their portfolio.</p>
+</div>
+<div style="flex:1 1 160px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Explore</div>
+<a href="#/sell">Sell your home</a><a href="#/invest">Investing</a><a href="#/about">About and team</a><a href="#/contact">Contact</a>
+</div>
+<div style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Customer care</div>
+<a href="tel:7327810111" class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">732.781.0111</a>
+<a href="https://www.instagram.com/thetransformgroupnj/">Instagram</a><a href="https://www.facebook.com/profile.php?id=61559072283955">Facebook</a>
+</div>
+<div style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Where we work</div>
+<span>Newark, Bridgewater, Westfield, Paramus, Parsippany, Demarest, Maplewood, and surrounding New Jersey communities.</span>
+<span style="font-size:14px;color:#8A9087">[Confirm the full list of counties served]</span>
+</div>
+</div>
+<div style="border-top:2px solid #3A4046;padding-top:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:15px">
+<span>© The Transform Group LLC</span>
+<a href="https://transformgroupnj.com/privacy-policy">Privacy Policy and Terms</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</main>
+
+<main class="page" id="page-sell" hidden>
+
+
+<div style="width:100%;display:flex;flex-direction:column;font-size:18px;line-height:1.6">
+
+<!-- Header -->
+<div style="background:#E9EAE6;border-bottom:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:14px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between">
+<a href="#/home" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+<svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="8" fill="#0B5D3B"/><rect x="3" y="3" width="32" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-width="1.8"/><path d="M10 21 L19 12 L28 21" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 20 V28 H24.5 V20" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linejoin="round"/></svg>
+<span class="disp" style="font-size:22px;letter-spacing:-0.01em">Transform Group</span>
+</a>
+<nav class="sitenav" style="display:flex;flex-wrap:wrap;gap:2px 18px;align-items:center">
+
+<a href="#/sell" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid #15181B">Sell your home</a>
+
+<a href="#/invest" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Invest</a>
+
+<a href="https://www.mysocietyrealestate.com/home_value" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Buy</a>
+
+<a href="https://www.sshomeremodel.com/" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Construction</a>
+
+<a href="#/about" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">About</a>
+
+<a href="#/contact" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Contact</a>
+
+</nav>
+<div class="siteright" style="display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center">
+<a href="tel:7327810111" class="disp" style="font-size:21px;letter-spacing:-0.01em;display:flex;align-items:center;gap:8px;min-height:46px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B5D3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>732.781.0111</a>
+<a href="#/sell" style="background:#15181B;color:#FFFFFF;font-weight:700;padding:12px 20px;border-radius:8px;min-height:46px;box-sizing:border-box;display:flex;align-items:center">Get my cash offer</a>
+</div>
+</div>
+</div>
+
+<!-- Title -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<h1 class="disp" style="margin:0;font-size:60px;max-width:900px">Tell us about the house. We'll tell you what we can offer.</h1>
+<p style="margin:0;font-size:21px;max-width:680px;color:#33383D">Take a fast, hassle-free cash sale, or list on the market with our Society Real Estate licensed agents. Either way, you decide, and there's no obligation.</p>
+</div>
+</div>
+
+<!-- Form + side -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:16px 24px 96px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+
+<div style="flex:2 1 600px;min-width:0;border:3px solid #15181B;border-radius:16px;overflow:hidden;background:#FFFFFF">
+<div style="background:#0B5D3B;color:#FFFFFF;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+<div class="disp" style="font-size:30px;letter-spacing:-0.01em">Exit 1: Sell your house</div>
+<svg width="36" height="36" viewBox="0 0 44 44" aria-hidden="true"><path d="M22 4 L37 24 H27 V40 H17 V24 H7 Z" fill="#FFFFFF"/></svg>
+</div>
+<div style="padding:32px;display:flex;flex-direction:column;gap:36px">
+
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;gap:14px;align-items:center"><span class="disp" style="font-size:40px;color:#0B5D3B">1</span><h2 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em">The property</h2></div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="s-street" style="font-weight:700;font-size:16px">Street address</label><input id="s-street" class="in" type="text"></div>
+<div style="display:flex;flex-wrap:wrap;gap:18px">
+<div style="flex:2 1 200px;display:flex;flex-direction:column;gap:6px"><label for="s-city" style="font-weight:700;font-size:16px">City</label><input id="s-city" class="in" type="text"></div>
+<div style="flex:1 1 90px;display:flex;flex-direction:column;gap:6px"><label for="s-state" style="font-weight:700;font-size:16px">State</label><input id="s-state" class="in" type="text" value="NJ"></div>
+<div style="flex:1 1 130px;display:flex;flex-direction:column;gap:6px"><label for="s-zip" style="font-weight:700;font-size:16px">ZIP code</label><input id="s-zip" class="in" type="text"></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="s-cond" style="font-weight:700;font-size:16px">How would you describe the property's condition?</label>
+<select id="s-cond" class="in"><option>Select one</option><option>Move-in ready</option><option>Needs minor repairs</option><option>Needs major repairs</option><option>Not sure</option></select></div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:18px;border-top:3px dashed #C9CBC4;padding-top:32px">
+<div style="display:flex;gap:14px;align-items:center"><span class="disp" style="font-size:40px;color:#0B5D3B">2</span><h2 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em">Your situation</h2></div>
+<div style="display:flex;flex-wrap:wrap;gap:18px">
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="s-why" style="font-weight:700;font-size:16px">What brings you to us today?</label>
+<select id="s-why" class="in"><option>Select one</option><option>Facing foreclosure</option><option>Inherited property</option><option>Property needs repairs</option><option>Relocating</option><option>Just need to sell fast</option><option>Something else</option></select></div>
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="s-when" style="font-weight:700;font-size:16px">When are you hoping to sell?</label>
+<select id="s-when" class="in"><option>Select one</option><option>As soon as possible</option><option>Within 30 days</option><option>In the next few months</option><option>Just exploring</option></select></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="s-price" style="font-weight:700;font-size:16px">Do you have a price in mind? (optional)</label><input id="s-price" class="in" type="text"></div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="s-notes" style="font-weight:700;font-size:16px">Anything else you'd like us to know?</label><textarea id="s-notes" class="in" rows="4" style="height:auto;padding:12px 14px;resize:vertical"></textarea></div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:18px;border-top:3px dashed #C9CBC4;padding-top:32px">
+<div style="display:flex;gap:14px;align-items:center"><span class="disp" style="font-size:40px;color:#0B5D3B">3</span><h2 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em">How to reach you</h2></div>
+<div style="display:flex;flex-wrap:wrap;gap:18px">
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="s-first" style="font-weight:700;font-size:16px">First name</label><input id="s-first" class="in" type="text"></div>
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="s-last" style="font-weight:700;font-size:16px">Last name</label><input id="s-last" class="in" type="text"></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:18px">
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="s-phone" style="font-weight:700;font-size:16px">Phone (required)</label><input id="s-phone" class="in" type="tel"></div>
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="s-email" style="font-weight:700;font-size:16px">Email (required)</label><input id="s-email" class="in" type="email"></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;font-size:14px;line-height:1.5;color:#4A4F55">
+<div style="display:flex;gap:12px;align-items:flex-start"><input id="s-c1" type="checkbox" style="width:22px;height:22px;margin:0;flex:none"><label for="s-c1">I consent to receive messages about my request. Message frequency may vary. Message and data rates may apply. Reply HELP for help or STOP to opt out.</label></div>
+<div style="display:flex;gap:12px;align-items:flex-start"><input id="s-c2" type="checkbox" style="width:22px;height:22px;margin:0;flex:none"><label for="s-c2">I consent to receive marketing and promotional messages. Consent is not a condition of purchase. Reply HELP for help or STOP to opt out.</label></div>
+</div>
+<a href="#/contact" style="background:#F6C21B;color:#15181B;font-weight:800;font-size:20px;height:60px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none">Get my cash offer</a>
+<div style="font-size:15px;color:#4A4F55">No obligation to sell. A member of our team will contact you to learn more about your property and situation. <a href="https://transformgroupnj.com/privacy-policy" style="text-decoration:underline">Privacy Policy</a> and <a href="https://transformgroupnj.com/privacy-policy" style="text-decoration:underline">Terms of Service</a>.</div>
+</div>
+
+</div>
+</div>
+
+<div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;gap:28px">
+<div style="background:#F6C21B;border:3px solid #15181B;border-radius:16px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px">
+<div style="font-size:18px;font-weight:700">Rather talk it through?</div>
+<a href="tel:7327810111" class="disp" style="font-size:40px;letter-spacing:-0.02em">732.781.0111</a>
+<div style="font-size:16px">Call customer care any time you have a question.</div>
+</div>
+<div style="border:3px solid #15181B;border-radius:16px;padding:28px;box-sizing:border-box;background:#FFFFFF;display:flex;flex-direction:column;gap:20px">
+<h3 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em">What happens next</h3>
+
+<div style="display:flex;gap:14px;align-items:flex-start">
+<span class="disp" style="font-size:36px;color:#0B5D3B;line-height:1">1</span>
+<div style="display:flex;flex-direction:column"><span style="font-weight:700">We review your details</span><span style="font-size:16px;color:#4A4F55">A member of our team reaches out to learn about your property and your situation.</span></div>
+</div>
+
+<div style="display:flex;gap:14px;align-items:flex-start">
+<span class="disp" style="font-size:36px;color:#0B5D3B;line-height:1">2</span>
+<div style="display:flex;flex-direction:column"><span style="font-weight:700">You get a fair offer</span><span style="font-size:16px;color:#4A4F55">A transparent cash offer, or a plan to list with a licensed agent. Your call.</span></div>
+</div>
+
+<div style="display:flex;gap:14px;align-items:flex-start">
+<span class="disp" style="font-size:36px;color:#0B5D3B;line-height:1">3</span>
+<div style="display:flex;flex-direction:column"><span style="font-weight:700">We close on your timeline</span><span style="font-size:16px;color:#4A4F55">We handle the paperwork and coordinate with the title company.</span></div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Two ways -->
+<div style="background:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<h2 class="disp" style="margin:0;font-size:46px;max-width:780px">Two ways to sell, and one team on your side.</h2>
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+<div style="flex:1 1 440px;min-width:0;border-top:6px solid #0B5D3B;padding-top:24px;display:flex;flex-direction:column;gap:12px">
+<h3 class="disp" style="margin:0;font-size:32px;letter-spacing:-0.01em">Fast cash sale</h3>
+<p style="margin:0;color:#33383D">Best when speed and certainty matter. We buy in any condition, so there are no repairs, no hidden fees, and no surprises. You choose the closing date.</p>
+</div>
+<div style="flex:1 1 440px;min-width:0;border-top:6px solid #15181B;padding-top:24px;display:flex;flex-direction:column;gap:12px">
+<h3 class="disp" style="margin:0;font-size:32px;letter-spacing:-0.01em">List with a licensed agent</h3>
+<p style="margin:0;color:#33383D">Best when you want to test the open market. List your property with our Society Real Estate licensed agents, with the same clear communication throughout.</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Final call -->
+<div style="background:#F6C21B;border-top:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between">
+<div class="disp" style="font-size:40px">Not ready to share details? Just call.</div>
+<a href="tel:7327810111" class="disp" style="font-size:clamp(40px,6vw,72px);letter-spacing:-0.03em">732.781.0111</a>
+</div>
+</div>
+
+<!-- Footer -->
+<div style="background:#22262B;color:#C9CDC2;font-size:16px">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+<div style="flex:2 1 320px;display:flex;flex-direction:column;gap:14px">
+<div class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">Transform Group</div>
+<p style="margin:0;max-width:440px">We help homeowners with flexible solutions, whether through a fast, hassle-free cash sale or by listing their property with our Society Real Estate licensed agents. We also offer investment opportunities for buyers looking to grow their portfolio.</p>
+</div>
+<div style="flex:1 1 160px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Explore</div>
+<a href="#/sell">Sell your home</a><a href="#/invest">Investing</a><a href="#/about">About and team</a><a href="#/contact">Contact</a>
+</div>
+<div style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Customer care</div>
+<a href="tel:7327810111" class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">732.781.0111</a>
+<a href="https://www.instagram.com/thetransformgroupnj/">Instagram</a><a href="https://www.facebook.com/profile.php?id=61559072283955">Facebook</a>
+</div>
+</div>
+<div style="border-top:2px solid #3A4046;padding-top:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:15px">
+<span>© The Transform Group LLC</span>
+<a href="https://transformgroupnj.com/privacy-policy">Privacy Policy and Terms</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</main>
+
+<main class="page" id="page-invest" hidden>
+
+
+<div style="width:100%;display:flex;flex-direction:column;font-size:18px;line-height:1.6">
+
+<!-- Header -->
+<div style="background:#E9EAE6;border-bottom:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:14px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between">
+<a href="#/home" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+<svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="8" fill="#0B5D3B"/><rect x="3" y="3" width="32" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-width="1.8"/><path d="M10 21 L19 12 L28 21" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 20 V28 H24.5 V20" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linejoin="round"/></svg>
+<span class="disp" style="font-size:22px;letter-spacing:-0.01em">Transform Group</span>
+</a>
+<nav class="sitenav" style="display:flex;flex-wrap:wrap;gap:2px 18px;align-items:center">
+
+<a href="#/sell" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Sell your home</a>
+
+<a href="#/invest" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid #15181B">Invest</a>
+
+<a href="https://www.mysocietyrealestate.com/home_value" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Buy</a>
+
+<a href="https://www.sshomeremodel.com/" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Construction</a>
+
+<a href="#/about" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">About</a>
+
+<a href="#/contact" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Contact</a>
+
+</nav>
+<div class="siteright" style="display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center">
+<a href="tel:7327810111" class="disp" style="font-size:21px;letter-spacing:-0.01em;display:flex;align-items:center;gap:8px;min-height:46px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B5D3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>732.781.0111</a>
+<a href="#/sell" style="background:#15181B;color:#FFFFFF;font-weight:700;padding:12px 20px;border-radius:8px;min-height:46px;box-sizing:border-box;display:flex;align-items:center">Get my cash offer</a>
+</div>
+</div>
+</div>
+
+<!-- Hero -->
+<div style="background:#22262B;color:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:72px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:40px 56px;align-items:flex-end;justify-content:space-between">
+<div style="flex:1 1 560px;display:flex;flex-direction:column;gap:20px">
+<div style="align-self:flex-start;background:#0B5D3B;border:3px solid #FFFFFF;border-radius:8px;padding:4px 16px;font-family:'Overpass',system-ui,sans-serif;font-weight:800;font-size:18px">Exit 2</div>
+<h1 class="disp" style="margin:0;font-size:64px">Put your capital behind the next renovation.</h1>
+<p style="margin:0;font-size:21px;color:#C9CDC2;max-width:620px">Joint-venture deals on New Jersey renovation and redevelopment projects. Every opportunity lists its projected after-repair value (ARV) and the capital required, so you know before you call.</p>
+</div>
+<div style="flex:0 1 340px;border:3px solid #FFFFFF;border-radius:16px;padding:28px;box-sizing:border-box;display:flex;flex-direction:column;gap:6px">
+<div style="color:#C9CDC2;font-size:16px">Joint venture inquiries</div>
+<div class="disp" style="font-size:28px;letter-spacing:-0.01em">Jonathan Echavarria</div>
+<div style="color:#C9CDC2;font-size:16px">Joint Venture Manager</div>
+<a href="tel:7327810111" class="disp" style="font-size:30px;color:#F6C21B;letter-spacing:-0.01em;margin-top:10px">732.781.0111</a>
+</div>
+</div>
+</div>
+
+<!-- How it works -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<h2 class="disp" style="margin:0;font-size:46px;max-width:760px">How partnering with us works.</h2>
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+
+<div style="flex:1 1 280px;min-width:0;border-top:6px solid #0B5D3B;padding-top:20px;display:flex;flex-direction:column;gap:10px">
+<div class="disp" style="font-size:64px;color:#0B5D3B;line-height:0.9">1</div>
+<h3 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em;line-height:1.1">Review the numbers</h3>
+<p style="margin:0;color:#33383D">Each opportunity lists its projected ARV and the capital required, so you can see if it fits before you call.</p>
+</div>
+
+<div style="flex:1 1 280px;min-width:0;border-top:6px solid #0B5D3B;padding-top:20px;display:flex;flex-direction:column;gap:10px">
+<div class="disp" style="font-size:64px;color:#0B5D3B;line-height:0.9">2</div>
+<h3 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em;line-height:1.1">Request details</h3>
+<p style="margin:0;color:#33383D">Reach out about a deal and our joint venture manager will walk you through the project and the plan.</p>
+</div>
+
+<div style="flex:1 1 280px;min-width:0;border-top:6px solid #0B5D3B;padding-top:20px;display:flex;flex-direction:column;gap:10px">
+<div class="disp" style="font-size:64px;color:#0B5D3B;line-height:0.9">3</div>
+<h3 class="disp" style="margin:0;font-size:26px;letter-spacing:-0.01em;line-height:1.1">Partner with us</h3>
+<p style="margin:0;color:#33383D">We bring the wholesaling and redevelopment experience. You bring the capital to build lasting value.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Board -->
+<div style="background:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-wrap:wrap;gap:16px 24px;justify-content:space-between;align-items:center">
+<h2 class="disp" style="margin:0;font-size:46px">Upcoming opportunities.</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<span style="background:#15181B;color:#FFFFFF;font-weight:700;padding:0 18px;border-radius:8px;min-height:44px;display:flex;align-items:center">All 8</span>
+<span style="border:2px solid #15181B;font-weight:700;padding:0 18px;border-radius:8px;min-height:44px;box-sizing:border-box;display:flex;align-items:center">Single family</span>
+<span style="border:2px solid #15181B;font-weight:700;padding:0 18px;border-radius:8px;min-height:44px;box-sizing:border-box;display:flex;align-items:center">3 family</span>
+</div>
+</div>
+<div style="background:#22262B;color:#FFFFFF;border:3px solid #15181B;border-radius:12px;overflow:hidden;display:flex;flex-direction:column">
+<div style="display:flex;flex-wrap:wrap;gap:4px 16px;padding:14px 24px;background:#0B5D3B;font-weight:700;font-size:16px">
+<span style="flex:2 1 200px">Location</span><span style="flex:1 1 130px">Type</span><span style="flex:1 1 130px">Projected ARV</span><span style="flex:1 1 130px">Capital needed</span><span style="flex:1 1 150px"></span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Newark, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">3 Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$950K to $1M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$200K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Bridgewater, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$1.2M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$150K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Westfield, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$2.25M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$200K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Paramus, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$2.3M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$150K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Parsippany, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$2.3M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$150K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Demarest, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$1.9M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$200K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Maplewood, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">Single Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$900K</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$150K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:6px 16px;padding:18px 24px;align-items:center;border-top:2px solid #3A4046">
+<span class="disp" style="flex:2 1 200px;font-size:24px;letter-spacing:-0.01em">Newark, NJ</span>
+<span style="flex:1 1 130px;color:#C9CDC2">3 Family</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;color:#F6C21B;letter-spacing:-0.01em">$950K to $1M</span>
+<span class="disp" style="flex:1 1 130px;font-size:24px;letter-spacing:-0.01em">$150K</span>
+<a href="#/contact" style="flex:1 1 150px;border:2px solid #FFFFFF;font-weight:700;font-size:16px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+</div>
+<div style="font-size:15px;color:#4A4F55">ARV = after-repair value. Figures are projections and subject to change. Deals shown are upcoming and not yet closed.</div>
+</div>
+</div>
+
+<!-- CTA -->
+<div style="background:#F6C21B;border-top:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;justify-content:space-between">
+<div style="flex:1 1 480px;display:flex;flex-direction:column;gap:8px">
+<div class="disp" style="font-size:40px">Want first look at new deals?</div>
+<p style="margin:0;font-size:19px">Tell us your target markets and the capital you work with, and we'll reach out when a project fits.</p>
+</div>
+<a href="#/contact" style="background:#15181B;color:#FFFFFF;font-weight:700;font-size:19px;padding:14px 28px;border-radius:8px;min-height:54px;box-sizing:border-box;display:flex;align-items:center;text-decoration:none">Talk to our JV manager</a>
+</div>
+</div>
+
+<!-- Footer -->
+<div style="background:#22262B;color:#C9CDC2;font-size:16px">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+<div style="flex:2 1 320px;display:flex;flex-direction:column;gap:14px">
+<div class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">Transform Group</div>
+<p style="margin:0;max-width:440px">We help homeowners with flexible solutions, whether through a fast, hassle-free cash sale or by listing their property with our Society Real Estate licensed agents. We also offer investment opportunities for buyers looking to grow their portfolio.</p>
+</div>
+<div style="flex:1 1 160px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Explore</div>
+<a href="#/sell">Sell your home</a><a href="#/invest">Investing</a><a href="#/about">About and team</a><a href="#/contact">Contact</a>
+</div>
+<div style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Customer care</div>
+<a href="tel:7327810111" class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">732.781.0111</a>
+<a href="https://www.instagram.com/thetransformgroupnj/">Instagram</a><a href="https://www.facebook.com/profile.php?id=61559072283955">Facebook</a>
+</div>
+</div>
+<div style="border-top:2px solid #3A4046;padding-top:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:15px">
+<span>© The Transform Group LLC</span>
+<a href="https://transformgroupnj.com/privacy-policy">Privacy Policy and Terms</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</main>
+
+<main class="page" id="page-about" hidden>
+
+
+<div style="width:100%;display:flex;flex-direction:column;font-size:18px;line-height:1.6">
+
+<!-- Header -->
+<div style="background:#E9EAE6;border-bottom:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:14px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between">
+<a href="#/home" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+<svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="8" fill="#0B5D3B"/><rect x="3" y="3" width="32" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-width="1.8"/><path d="M10 21 L19 12 L28 21" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 20 V28 H24.5 V20" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linejoin="round"/></svg>
+<span class="disp" style="font-size:22px;letter-spacing:-0.01em">Transform Group</span>
+</a>
+<nav class="sitenav" style="display:flex;flex-wrap:wrap;gap:2px 18px;align-items:center">
+
+<a href="#/sell" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Sell your home</a>
+
+<a href="#/invest" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Invest</a>
+
+<a href="https://www.mysocietyrealestate.com/home_value" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Buy</a>
+
+<a href="https://www.sshomeremodel.com/" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Construction</a>
+
+<a href="#/about" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid #15181B">About</a>
+
+<a href="#/contact" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Contact</a>
+
+</nav>
+<div class="siteright" style="display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center">
+<a href="tel:7327810111" class="disp" style="font-size:21px;letter-spacing:-0.01em;display:flex;align-items:center;gap:8px;min-height:46px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B5D3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>732.781.0111</a>
+<a href="#/sell" style="background:#15181B;color:#FFFFFF;font-weight:700;padding:12px 20px;border-radius:8px;min-height:46px;box-sizing:border-box;display:flex;align-items:center">Get my cash offer</a>
+</div>
+</div>
+</div>
+
+<!-- Hero -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:80px 24px 56px;box-sizing:border-box;display:flex;flex-direction:column;gap:48px">
+<h1 class="disp" style="margin:0;font-size:84px;max-width:1000px">Real estate has the power to change lives.</h1>
+<div style="display:flex;flex-wrap:wrap;gap:32px">
+
+<div style="flex:1 1 300px;min-width:0;border-top:6px solid #0B5D3B;padding-top:18px;display:flex;flex-direction:column;gap:8px">
+<h2 class="disp" style="margin:0;font-size:30px;letter-spacing:-0.01em">Transforming families</h2>
+<p style="margin:0;color:#33383D">From distressed properties and pre-foreclosures to lis pendens, we step in with solutions that ease financial burdens and create fresh starts.</p>
+</div>
+
+<div style="flex:1 1 300px;min-width:0;border-top:6px solid #0B5D3B;padding-top:18px;display:flex;flex-direction:column;gap:8px">
+<h2 class="disp" style="margin:0;font-size:30px;letter-spacing:-0.01em">Transforming communities</h2>
+<p style="margin:0;color:#33383D">We reimagine outdated properties as modern, contemporary homes that breathe new life into New Jersey neighborhoods.</p>
+</div>
+
+<div style="flex:1 1 300px;min-width:0;border-top:6px solid #0B5D3B;padding-top:18px;display:flex;flex-direction:column;gap:8px">
+<h2 class="disp" style="margin:0;font-size:30px;letter-spacing:-0.01em">Transforming real estate</h2>
+<p style="margin:0;color:#33383D">Wholesaling expertise paired with redevelopment, built on integrity, innovation, and results.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Story -->
+<div style="background:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start">
+<div style="flex:1 1 420px;min-width:0;height:460px;border-radius:12px;background:#C9CCC3;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box;color:#4A4F55;font-size:16px">Photo: a before and after of a transformed New Jersey home</div>
+<div style="flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:20px">
+<h2 class="disp" style="margin:0;font-size:44px">Experts in real estate, committed to your success.</h2>
+<p style="margin:0;color:#33383D">What started as a passion for helping homeowners find real solutions has grown into a company dedicated to creating opportunities for sellers, buyers, and investors alike. For more than 10 years, we've specialized in wholesaling real estate across New Jersey.</p>
+<p style="margin:0;color:#33383D">Our team brings together experience in real estate, investing, and community development. We've seen firsthand how the right deal can relieve stress for a seller, provide strong returns for an investor, and breathe new life into a neighborhood.</p>
+<p style="margin:0;color:#33383D">At our core, we are problem-solvers, connectors, and community builders, committed to transforming properties and creating lasting value.</p>
+</div>
+</div>
+</div>
+
+<!-- Promises -->
+<div style="background:#0B5D3B;color:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+<div style="flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px">
+<h2 class="disp" style="margin:0;font-size:44px">Your home is more than a property. It's part of your story.</h2>
+<p style="margin:0;color:#DCEFE4">We treat every homeowner with compassion, honesty, and respect. We understand the challenges that come with selling, and we're here to make the process easier, not harder.</p>
+</div>
+<div style="flex:1 1 520px;min-width:0;border:4px solid #FFFFFF;border-radius:8px;padding:12px 32px;box-sizing:border-box;display:flex;flex-direction:column">
+<div class="disp" style="font-size:28px;letter-spacing:-0.01em;padding:16px 0">We promise to</div>
+
+<div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:3px dashed #FFFFFF">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10"/></svg>
+<span style="font-size:20px">Provide fair and transparent offers with no hidden fees.</span>
+</div>
+
+<div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:3px dashed #FFFFFF">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10"/></svg>
+<span style="font-size:20px">Communicate clearly and honestly throughout the entire process.</span>
+</div>
+
+<div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:3px dashed #FFFFFF">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10"/></svg>
+<span style="font-size:20px">Close on your timeline, whether you need speed or flexibility.</span>
+</div>
+
+<div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:3px dashed #FFFFFF">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10"/></svg>
+<span style="font-size:20px">Deliver quality investment opportunities that build wealth for our partners.</span>
+</div>
+
+<div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:3px dashed #FFFFFF">
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M5 12l5 5 9-10"/></svg>
+<span style="font-size:20px">Strengthen communities by transforming properties and creating value.</span>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Team -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:88px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<h2 class="disp" style="margin:0;font-size:46px;max-width:760px">The people behind every transformation.</h2>
+<div style="display:flex;flex-wrap:wrap;gap:24px">
+
+<div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<div style="aspect-ratio:4/5;border-radius:12px;background:#C9CCC3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+<span class="disp" style="font-size:52px;color:#6B7076">WS</span>
+<span style="font-size:14px;color:#4A4F55">Team photo</span>
+</div>
+<div style="display:flex;flex-direction:column;border-top:3px solid #15181B;padding-top:12px">
+<span class="disp" style="font-size:24px;letter-spacing:-0.01em;line-height:1.15">Willie Stevens</span>
+<span style="font-size:16px;color:#4A4F55">CEO</span>
+</div>
+</div>
+
+<div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<div style="aspect-ratio:4/5;border-radius:12px;background:#C9CCC3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+<span class="disp" style="font-size:52px;color:#6B7076">AS</span>
+<span style="font-size:14px;color:#4A4F55">Team photo</span>
+</div>
+<div style="display:flex;flex-direction:column;border-top:3px solid #15181B;padding-top:12px">
+<span class="disp" style="font-size:24px;letter-spacing:-0.01em;line-height:1.15">Alexis Stevens</span>
+<span style="font-size:16px;color:#4A4F55">Agent Team Lead</span>
+</div>
+</div>
+
+<div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<div style="aspect-ratio:4/5;border-radius:12px;background:#C9CCC3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+<span class="disp" style="font-size:52px;color:#6B7076">JS</span>
+<span style="font-size:14px;color:#4A4F55">Team photo</span>
+</div>
+<div style="display:flex;flex-direction:column;border-top:3px solid #15181B;padding-top:12px">
+<span class="disp" style="font-size:24px;letter-spacing:-0.01em;line-height:1.15">Jayden Stevens</span>
+<span style="font-size:16px;color:#4A4F55">Lead Acquisitions Manager</span>
+</div>
+</div>
+
+<div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<div style="aspect-ratio:4/5;border-radius:12px;background:#C9CCC3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+<span class="disp" style="font-size:52px;color:#6B7076">BA</span>
+<span style="font-size:14px;color:#4A4F55">Team photo</span>
+</div>
+<div style="display:flex;flex-direction:column;border-top:3px solid #15181B;padding-top:12px">
+<span class="disp" style="font-size:24px;letter-spacing:-0.01em;line-height:1.15">Badreddin Alasmar</span>
+<span style="font-size:16px;color:#4A4F55">Lead Dispositions Manager</span>
+</div>
+</div>
+
+<div style="flex:1 1 200px;min-width:0;display:flex;flex-direction:column;gap:14px">
+<div style="aspect-ratio:4/5;border-radius:12px;background:#C9CCC3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px">
+<span class="disp" style="font-size:52px;color:#6B7076">JE</span>
+<span style="font-size:14px;color:#4A4F55">Team photo</span>
+</div>
+<div style="display:flex;flex-direction:column;border-top:3px solid #15181B;padding-top:12px">
+<span class="disp" style="font-size:24px;letter-spacing:-0.01em;line-height:1.15">Jonathan Echavarria</span>
+<span style="font-size:16px;color:#4A4F55">Joint Venture Manager</span>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<!-- Expertise -->
+<div style="background:#22262B;color:#FFFFFF">
+<div style="max-width:1240px;margin:0 auto;padding:80px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:32px 56px;align-items:center">
+<h2 class="disp" style="margin:0;flex:1 1 400px;font-size:40px">We're not just real estate professionals. We're problem solvers.</h2>
+<p style="flex:1 1 480px;margin:0;font-size:20px;color:#C9CDC2">Our expertise lies in helping homeowners sell quickly and investors find great opportunities. With deep market knowledge, strong community ties, and a proven process, we make every transaction fast, fair, and stress-free. From the first conversation to closing day, we deliver solutions that work for everyone involved.</p>
+</div>
+</div>
+
+<!-- Final call -->
+<div style="background:#F6C21B">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:20px 40px;align-items:center;justify-content:space-between">
+<div class="disp" style="font-size:40px">Let's find a solution together.</div>
+<a href="tel:7327810111" class="disp" style="font-size:clamp(40px,6vw,72px);letter-spacing:-0.03em">732.781.0111</a>
+</div>
+</div>
+
+<!-- Footer -->
+<div style="background:#22262B;color:#C9CDC2;font-size:16px">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+<div style="flex:2 1 320px;display:flex;flex-direction:column;gap:14px">
+<div class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">Transform Group</div>
+<p style="margin:0;max-width:440px">We help homeowners with flexible solutions, whether through a fast, hassle-free cash sale or by listing their property with our Society Real Estate licensed agents. We also offer investment opportunities for buyers looking to grow their portfolio.</p>
+</div>
+<div style="flex:1 1 160px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Explore</div>
+<a href="#/sell">Sell your home</a><a href="#/invest">Investing</a><a href="#/about">About and team</a><a href="#/contact">Contact</a>
+</div>
+<div style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Customer care</div>
+<a href="tel:7327810111" class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">732.781.0111</a>
+<a href="https://www.instagram.com/thetransformgroupnj/">Instagram</a><a href="https://www.facebook.com/profile.php?id=61559072283955">Facebook</a>
+</div>
+</div>
+<div style="border-top:2px solid #3A4046;padding-top:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:15px">
+<span>© The Transform Group LLC</span>
+<a href="https://transformgroupnj.com/privacy-policy">Privacy Policy and Terms</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</main>
+
+<main class="page" id="page-contact" hidden>
+
+
+<div style="width:100%;display:flex;flex-direction:column;font-size:18px;line-height:1.6">
+
+<!-- Header -->
+<div style="background:#E9EAE6;border-bottom:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:14px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:12px 28px;align-items:center;justify-content:space-between">
+<a href="#/home" style="display:flex;align-items:center;gap:10px;text-decoration:none">
+<svg width="38" height="38" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="8" fill="#0B5D3B"/><rect x="3" y="3" width="32" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-width="1.8"/><path d="M10 21 L19 12 L28 21" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 20 V28 H24.5 V20" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linejoin="round"/></svg>
+<span class="disp" style="font-size:22px;letter-spacing:-0.01em">Transform Group</span>
+</a>
+<nav class="sitenav" style="display:flex;flex-wrap:wrap;gap:2px 18px;align-items:center">
+
+<a href="#/sell" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Sell your home</a>
+
+<a href="#/invest" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Invest</a>
+
+<a href="https://www.mysocietyrealestate.com/home_value" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Buy</a>
+
+<a href="https://www.sshomeremodel.com/" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">Construction</a>
+
+<a href="#/about" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid transparent">About</a>
+
+<a href="#/contact" style="padding:10px 2px;font-size:17px;font-weight:700;border-bottom:3px solid #15181B">Contact</a>
+
+</nav>
+<div class="siteright" style="display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center">
+<a href="tel:7327810111" class="disp" style="font-size:21px;letter-spacing:-0.01em;display:flex;align-items:center;gap:8px;min-height:46px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B5D3B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>732.781.0111</a>
+<a href="#/sell" style="background:#15181B;color:#FFFFFF;font-weight:700;padding:12px 20px;border-radius:8px;min-height:46px;box-sizing:border-box;display:flex;align-items:center">Get my cash offer</a>
+</div>
+</div>
+</div>
+
+<!-- Title + phone -->
+<div style="background:#F6C21B;border-bottom:2px solid #15181B">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:24px 56px;align-items:flex-end;justify-content:space-between">
+<h1 class="disp" style="margin:0;flex:1 1 480px;font-size:60px">Get in touch. We'll call you back promptly.</h1>
+<div style="display:flex;flex-direction:column;gap:4px">
+<span style="font-size:19px;font-weight:700">Or call us right now</span>
+<a href="tel:7327810111" class="disp" style="font-size:clamp(40px,6vw,72px);letter-spacing:-0.03em">732.781.0111</a>
+</div>
+</div>
+</div>
+
+<!-- Form + info -->
+<div style="background:#E9EAE6">
+<div style="max-width:1240px;margin:0 auto;padding:72px 24px 96px;box-sizing:border-box;display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start">
+
+<div style="flex:2 1 560px;min-width:0;border:3px solid #15181B;border-radius:16px;background:#FFFFFF;padding:36px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<h2 class="disp" style="margin:0;font-size:34px;letter-spacing:-0.01em">Send us a message</h2>
+<div style="display:flex;flex-wrap:wrap;gap:18px">
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="c-first" style="font-weight:700;font-size:16px">First name</label><input id="c-first" class="in" type="text"></div>
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="c-last" style="font-weight:700;font-size:16px">Last name</label><input id="c-last" class="in" type="text"></div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:18px">
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="c-phone" style="font-weight:700;font-size:16px">Phone (required)</label><input id="c-phone" class="in" type="tel"></div>
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:6px"><label for="c-email" style="font-weight:700;font-size:16px">Email (required)</label><input id="c-email" class="in" type="email"></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="c-topic" style="font-weight:700;font-size:16px">What can we help with?</label>
+<select id="c-topic" class="in"><option>Selling my home</option><option>An investment or joint-venture opportunity</option><option>Buying a home</option><option>Construction and remodeling</option><option>Something else</option></select></div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="c-msg" style="font-weight:700;font-size:16px">Tell us a little more</label><textarea id="c-msg" class="in" rows="5" style="height:auto;padding:12px 14px;resize:vertical"></textarea></div>
+<div style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4A4F55"><input id="c-consent" type="checkbox" style="width:22px;height:22px;margin:0;flex:none"><label for="c-consent">I consent to receive messages about my inquiry. Message frequency may vary. Message and data rates may apply. Reply HELP for help or STOP to opt out.</label></div>
+<a href="#/contact" style="background:#F6C21B;color:#15181B;font-weight:800;font-size:20px;height:60px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none">Send message</a>
+</div>
+
+<div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:28px">
+<div style="background:#0B5D3B;color:#FFFFFF;border-radius:16px;padding:12px;box-sizing:border-box">
+<div style="border:4px solid #FFFFFF;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:18px">
+<div class="disp" style="font-size:26px;letter-spacing:-0.01em">Looking for something specific?</div>
+<a href="#/sell" style="display:flex;flex-direction:column;border-top:3px dashed #FFFFFF;padding-top:14px"><span style="font-weight:700;font-size:19px">Selling a property</span><span style="font-size:16px;color:#DCEFE4">Share your details and get a fair cash offer.</span></a>
+<a href="#/invest" style="display:flex;flex-direction:column;border-top:3px dashed #FFFFFF;padding-top:14px"><span style="font-weight:700;font-size:19px">Investment opportunities</span><span style="font-size:16px;color:#DCEFE4">Browse upcoming deals and request details.</span></a>
+<a href="https://www.sshomeremodel.com/" style="display:flex;flex-direction:column;border-top:3px dashed #FFFFFF;padding-top:14px"><span style="font-weight:700;font-size:19px">Construction and remodeling</span><span style="font-size:16px;color:#DCEFE4">Visit our construction partner site.</span></a>
+</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-size:17px"><span style="font-weight:700">Follow us</span><a href="https://www.instagram.com/thetransformgroupnj/" style="text-decoration:underline">Instagram</a><a href="https://www.facebook.com/profile.php?id=61559072283955" style="text-decoration:underline">Facebook</a></div>
+</div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<div style="background:#22262B;color:#C9CDC2;font-size:16px">
+<div style="max-width:1240px;margin:0 auto;padding:64px 24px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-wrap:wrap;gap:40px">
+<div style="flex:2 1 320px;display:flex;flex-direction:column;gap:14px">
+<div class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">Transform Group</div>
+<p style="margin:0;max-width:440px">We help homeowners with flexible solutions, whether through a fast, hassle-free cash sale or by listing their property with our Society Real Estate licensed agents. We also offer investment opportunities for buyers looking to grow their portfolio.</p>
+</div>
+<div style="flex:1 1 160px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Explore</div>
+<a href="#/sell">Sell your home</a><a href="#/invest">Investing</a><a href="#/about">About and team</a><a href="#/contact">Contact</a>
+</div>
+<div style="flex:1 1 220px;display:flex;flex-direction:column;gap:6px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Customer care</div>
+<a href="tel:7327810111" class="disp" style="font-size:24px;color:#FFFFFF;letter-spacing:-0.01em">732.781.0111</a>
+<a href="https://www.instagram.com/thetransformgroupnj/">Instagram</a><a href="https://www.facebook.com/profile.php?id=61559072283955">Facebook</a>
+</div>
+</div>
+<div style="border-top:2px solid #3A4046;padding-top:22px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:15px">
+<span>© The Transform Group LLC</span>
+<a href="https://transformgroupnj.com/privacy-policy">Privacy Policy and Terms</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</main>
+
+<main class="page" id="page-mobile" hidden>
+<div style="background:#CFD1CB;padding:32px 16px 48px;display:flex;flex-direction:column;align-items:center;gap:16px">
+<p style="margin:0;font-size:15px;color:#33383D;max-width:390px;text-align:center">Phone layout of the homepage (390 px wide). On a real phone, every page adapts like this.</p>
+<div style="box-shadow:0 12px 40px rgba(0,0,0,0.25);border-radius:6px;overflow:hidden">
+
+<div style="width:390px;display:flex;flex-direction:column;font-size:17px;line-height:1.55;background:#E9EAE6">
+
+<!-- Header -->
+<div style="background:#E9EAE6;border-bottom:2px solid #15181B;padding:10px 16px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between">
+<a href="#/mobile" style="display:flex;align-items:center;gap:8px;text-decoration:none">
+<svg width="34" height="34" viewBox="0 0 38 38" aria-hidden="true"><rect width="38" height="38" rx="8" fill="#0B5D3B"/><rect x="3" y="3" width="32" height="32" rx="5" fill="none" stroke="#FFFFFF" stroke-width="1.8"/><path d="M10 21 L19 12 L28 21" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.5 20 V28 H24.5 V20" stroke="#FFFFFF" stroke-width="2.6" fill="none" stroke-linejoin="round"/></svg>
+<span class="disp" style="font-size:18px;letter-spacing:-0.01em;line-height:1.05">Transform<br>Group</span>
+</a>
+<div style="display:flex;align-items:center;gap:8px">
+<a href="tel:7327810111" style="background:#F6C21B;color:#15181B;font-weight:800;height:46px;padding:0 16px;border-radius:8px;border:2px solid #15181B;display:flex;align-items:center;gap:8px;box-sizing:border-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#15181B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Call</a>
+<button aria-label="Open menu" style="width:46px;height:46px;border:2px solid #15181B;border-radius:8px;background:#FFFFFF;display:flex;align-items:center;justify-content:center;padding:0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#15181B" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</div>
+
+<!-- Hero -->
+<div style="padding:36px 20px 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:22px">
+<h1 class="disp" style="margin:0;font-size:40px">We buy houses in any condition. You skip the repairs, the fees, and the wait.</h1>
+<p style="margin:0;font-size:18px;color:#33383D">Tell us about the property and we'll make a fair, transparent cash offer.</p>
+<div style="display:flex;flex-direction:column;align-items:flex-start;margin-top:6px">
+<div style="margin-left:20px;background:#0B5D3B;color:#FFFFFF;border:3px solid #FFFFFF;outline:3px solid #0B5D3B;border-bottom:none;border-radius:8px 8px 0 0;padding:4px 14px;font-family:'Overpass',system-ui,sans-serif;font-weight:800;font-size:16px">Exit 1</div>
+<div style="width:100%;background:#0B5D3B;color:#FFFFFF;border-radius:14px;padding:10px;box-sizing:border-box;box-shadow:0 8px 0 #15181B">
+<div style="border:3px solid #FFFFFF;border-radius:8px;padding:20px;display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;gap:12px;justify-content:space-between;align-items:flex-start">
+<div style="display:flex;flex-direction:column;gap:4px"><div class="disp" style="font-size:30px;letter-spacing:-0.01em">Sell Your House</div><div style="font-size:16px;color:#DCEFE4">Cash offer for any property in New Jersey</div></div>
+<svg width="38" height="38" viewBox="0 0 44 44" aria-hidden="true" style="flex:none"><path d="M22 4 L37 24 H27 V40 H17 V24 H7 Z" fill="#FFFFFF"/></svg>
+</div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="m-address" style="font-weight:700;font-size:16px">Where's the property?</label><input id="m-address" class="in" type="text" placeholder="Street address, town, NJ"></div>
+<a href="#/sell" style="background:#F6C21B;color:#15181B;font-weight:800;font-size:18px;height:54px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none">Get my cash offer</a>
+<div style="border-top:3px dashed #FFFFFF;padding-top:14px;display:flex;flex-direction:column;gap:2px">
+<span style="font-size:16px">Prefer to talk it through?</span>
+<a href="tel:7327810111" class="disp" style="font-size:30px;color:#F6C21B;letter-spacing:-0.01em">732.781.0111</a>
+</div>
+</div>
+</div>
+<div style="font-size:14px;color:#4A4F55;margin-top:18px">No obligation to sell. Two quick steps, then a member of our team contacts you.</div>
+</div>
+</div>
+
+<!-- Band -->
+<div style="background:#F6C21B;border-top:2px solid #15181B;border-bottom:2px solid #15181B;display:flex;flex-wrap:wrap">
+
+<div class="disp" style="width:50%;padding:14px 16px;font-size:18px;letter-spacing:-0.01em;box-sizing:border-box;border-right:2px solid #15181B;border-bottom:2px solid #15181B;margin-bottom:-2px">No repairs</div>
+
+<div class="disp" style="width:50%;padding:14px 16px;font-size:18px;letter-spacing:-0.01em;box-sizing:border-box;border-right:2px solid #15181B;border-bottom:2px solid #15181B;margin-bottom:-2px">No fees</div>
+
+<div class="disp" style="width:50%;padding:14px 16px;font-size:18px;letter-spacing:-0.01em;box-sizing:border-box;border-right:2px solid #15181B;border-bottom:2px solid #15181B;margin-bottom:-2px">Hassle free</div>
+
+<div class="disp" style="width:50%;padding:14px 16px;font-size:18px;letter-spacing:-0.01em;box-sizing:border-box;border-right:2px solid #15181B;border-bottom:2px solid #15181B;margin-bottom:-2px">Any condition</div>
+
+<div class="disp" style="width:50%;padding:14px 16px;font-size:18px;letter-spacing:-0.01em;box-sizing:border-box;border-right:2px solid #15181B;border-bottom:2px solid #15181B;margin-bottom:-2px">Your closing date</div>
+
+</div>
+
+<!-- Situations -->
+<div style="padding:56px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:8px">
+<h2 class="disp" style="margin:0 0 14px;font-size:34px">Whatever brought you here, we can work with it.</h2>
+
+<a href="#/sell" style="display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="font-size:23px;letter-spacing:-0.01em">You inherited a property</span>
+<span style="color:#33383D;font-size:16px">Skip the cleanout and the repairs. We buy inherited homes as-is.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="font-size:23px;letter-spacing:-0.01em">You're facing foreclosure</span>
+<span style="color:#33383D;font-size:16px">We help homeowners in pre-foreclosure and lis pendens find a way forward.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="font-size:23px;letter-spacing:-0.01em">The house needs work</span>
+<span style="color:#33383D;font-size:16px">No contractors and no repair bills. We buy in any condition.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="font-size:23px;letter-spacing:-0.01em">You're relocating</span>
+<span style="color:#33383D;font-size:16px">Sell on your timeline. We even help with your move.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="font-size:23px;letter-spacing:-0.01em">Money is tight</span>
+<span style="color:#33383D;font-size:16px">A quick, fair sale can lift the weight, with no hidden fees.</span>
+</a>
+
+<a href="#/sell" style="display:flex;flex-direction:column;gap:4px;padding:18px 0;border-top:3px solid #15181B;text-decoration:none">
+<span class="disp" style="font-size:23px;letter-spacing:-0.01em">You're not sure yet</span>
+<span style="color:#33383D;font-size:16px">Tell us what's going on. There's no obligation to sell.</span>
+</a>
+
+<div style="border-top:3px solid #15181B"></div>
+</div>
+
+<!-- Process -->
+<div style="background:#22262B;color:#FFFFFF;padding:56px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:28px">
+<h2 class="disp" style="margin:0;font-size:34px">Four steps from first call to cash in hand.</h2>
+<div style="display:flex;flex-direction:column;border-left:5px dashed #F6C21B;padding-left:22px;gap:30px;margin-left:6px">
+
+<div style="display:flex;flex-direction:column;gap:6px">
+<div style="display:flex;gap:12px;align-items:baseline"><span class="disp" style="font-size:48px;color:#F6C21B;line-height:0.9">1</span><h3 class="disp" style="margin:0;font-size:22px;letter-spacing:-0.01em;line-height:1.1">We find your solution</h3></div>
+<p style="margin:0;color:#C9CDC2;font-size:16px">Whatever your situation, we help you find a fast, reliable way to sell.</p>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:6px">
+<div style="display:flex;gap:12px;align-items:baseline"><span class="disp" style="font-size:48px;color:#F6C21B;line-height:0.9">2</span><h3 class="disp" style="margin:0;font-size:22px;letter-spacing:-0.01em;line-height:1.1">Receive a fair cash offer</h3></div>
+<p style="margin:0;color:#C9CDC2;font-size:16px">A transparent offer with no hidden fees or surprises.</p>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:6px">
+<div style="display:flex;gap:12px;align-items:baseline"><span class="disp" style="font-size:48px;color:#F6C21B;line-height:0.9">3</span><h3 class="disp" style="margin:0;font-size:22px;letter-spacing:-0.01em;line-height:1.1">We handle the details</h3></div>
+<p style="margin:0;color:#C9CDC2;font-size:16px">Paperwork, title coordination, and guidance at every step.</p>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:6px">
+<div style="display:flex;gap:12px;align-items:baseline"><span class="disp" style="font-size:48px;color:#F6C21B;line-height:0.9">4</span><h3 class="disp" style="margin:0;font-size:22px;letter-spacing:-0.01em;line-height:1.1">Close and move forward</h3></div>
+<p style="margin:0;color:#C9CDC2;font-size:16px">We close on your timeline and assist with relocation.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Proof -->
+<div style="background:#FFFFFF;padding:56px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:22px">
+<h2 class="disp" style="margin:0;font-size:34px">Homeowners we've helped move forward.</h2>
+<p class="disp" style="margin:0;font-size:23px;line-height:1.22;letter-spacing:-0.01em;font-weight:800;color:#0B5D3B">[Featured testimonial: 2 to 3 sentences from a real seller.]</p>
+<div style="display:flex;flex-direction:column"><span style="font-weight:700">[First name, Town, NJ]</span><span style="color:#4A4F55;font-size:15px">[Their situation]</span></div>
+<div style="border:2px dashed #8A8F94;border-radius:8px;padding:10px 14px;font-weight:700;font-size:15px;color:#4A4F55">[Google rating] and [N] reviews</div>
+<div style="aspect-ratio:16/10;border-radius:14px;background:#22262B;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px">
+<button aria-label="Play video testimonial" style="width:68px;height:68px;border-radius:34px;border:none;background:#F6C21B;display:flex;align-items:center;justify-content:center;padding:0"><svg width="26" height="26" viewBox="0 0 30 30" aria-hidden="true"><path d="M9 5 L25 15 L9 25 Z" fill="#15181B"/></svg></button>
+<span style="color:#C9CDC2;font-size:14px">[Video testimonial]</span>
+</div>
+</div>
+
+<!-- Versus -->
+<div style="padding:56px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:20px">
+<h2 class="disp" style="margin:0;font-size:34px">Selling to us, or selling the traditional way.</h2>
+
+<div style="border:3px solid #15181B;border-radius:12px;overflow:hidden;background:#FFFFFF;display:flex;flex-direction:column">
+<div style="padding:12px 16px;font-weight:700">Repairs and cleaning</div>
+<div style="padding:12px 16px;background:#0B5D3B;color:#FFFFFF">None. We buy as-is.</div>
+<div style="padding:12px 16px;color:#4A4F55;font-size:16px">Often needed before listing</div>
+</div>
+
+<div style="border:3px solid #15181B;border-radius:12px;overflow:hidden;background:#FFFFFF;display:flex;flex-direction:column">
+<div style="padding:12px 16px;font-weight:700">Agent commissions and fees</div>
+<div style="padding:12px 16px;background:#0B5D3B;color:#FFFFFF">None, and no hidden fees</div>
+<div style="padding:12px 16px;color:#4A4F55;font-size:16px">Usually paid by the seller</div>
+</div>
+
+<div style="border:3px solid #15181B;border-radius:12px;overflow:hidden;background:#FFFFFF;display:flex;flex-direction:column">
+<div style="padding:12px 16px;font-weight:700">Closing date</div>
+<div style="padding:12px 16px;background:#0B5D3B;color:#FFFFFF">Your timeline</div>
+<div style="padding:12px 16px;color:#4A4F55;font-size:16px">Depends on the buyer and their financing</div>
+</div>
+
+<div style="border:3px solid #15181B;border-radius:12px;overflow:hidden;background:#FFFFFF;display:flex;flex-direction:column">
+<div style="padding:12px 16px;font-weight:700">Sale price</div>
+<div style="padding:12px 16px;background:#0B5D3B;color:#FFFFFF">A cash offer that reflects the property's condition</div>
+<div style="padding:12px 16px;color:#4A4F55;font-size:16px">Potentially higher, after costs and time</div>
+</div>
+
+</div>
+
+<!-- Mid CTA -->
+<div style="background:#0B5D3B;color:#FFFFFF;padding:44px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:16px">
+<h2 class="disp" style="margin:0;font-size:30px">See what we could offer for your house.</h2>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="m2-address" style="font-weight:700;font-size:16px">Property address</label><input id="m2-address" class="in" type="text"></div>
+<div style="display:flex;flex-direction:column;gap:6px"><label for="m2-phone" style="font-weight:700;font-size:16px">Phone</label><input id="m2-phone" class="in" type="tel"></div>
+<a href="#/sell" style="background:#F6C21B;color:#15181B;font-weight:800;font-size:18px;height:54px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none">Get my cash offer</a>
+</div>
+
+<!-- Work -->
+<div style="background:#FFFFFF;padding:56px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:24px">
+<h2 class="disp" style="margin:0;font-size:34px">After we buy, we transform.</h2>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:6px;border-radius:12px;overflow:hidden">
+<div style="flex:1;height:170px;background:#BFC2BA;display:flex;align-items:flex-end;padding:10px;box-sizing:border-box"><span style="background:#15181B;color:#FFFFFF;font-weight:700;font-size:14px;padding:3px 10px;border-radius:6px">Before</span></div>
+<div style="flex:1;height:170px;background:#D5D8CF;display:flex;align-items:flex-end;padding:10px;box-sizing:border-box"><span style="background:#F6C21B;color:#15181B;font-weight:700;font-size:14px;padding:3px 10px;border-radius:6px">After</span></div>
+</div>
+<div style="display:flex;flex-direction:column"><span class="disp" style="font-size:21px;letter-spacing:-0.01em">[Town], NJ</span><span style="color:#4A4F55;font-size:15px">[Property type] and [scope of work]</span></div>
+</div>
+
+<div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;gap:6px;border-radius:12px;overflow:hidden">
+<div style="flex:1;height:170px;background:#BFC2BA;display:flex;align-items:flex-end;padding:10px;box-sizing:border-box"><span style="background:#15181B;color:#FFFFFF;font-weight:700;font-size:14px;padding:3px 10px;border-radius:6px">Before</span></div>
+<div style="flex:1;height:170px;background:#D5D8CF;display:flex;align-items:flex-end;padding:10px;box-sizing:border-box"><span style="background:#F6C21B;color:#15181B;font-weight:700;font-size:14px;padding:3px 10px;border-radius:6px">After</span></div>
+</div>
+<div style="display:flex;flex-direction:column"><span class="disp" style="font-size:21px;letter-spacing:-0.01em">[Town], NJ</span><span style="color:#4A4F55;font-size:15px">[Property type] and [scope of work]</span></div>
+</div>
+
+</div>
+
+<!-- Invest -->
+<div style="background:#22262B;color:#FFFFFF;padding:56px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:22px">
+<div style="align-self:flex-start;background:#0B5D3B;border:3px solid #FFFFFF;border-radius:8px;padding:3px 14px;font-family:'Overpass',system-ui,sans-serif;font-weight:800;font-size:16px">Exit 2</div>
+<h2 class="disp" style="margin:0;font-size:34px">Put your capital behind the next renovation.</h2>
+<p style="margin:0;color:#C9CDC2;font-size:16px">Joint-venture deals on New Jersey renovation projects, with projected ARV and capital needed shown up front.</p>
+<div style="border:3px solid #FFFFFF;border-radius:12px;overflow:hidden;display:flex;flex-direction:column">
+
+<div style="padding:16px;border-top:2px solid #3A4046;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><span class="disp" style="font-size:21px;letter-spacing:-0.01em">Newark, NJ</span><span style="color:#C9CDC2;font-size:14px">3 Family</span></div>
+<div style="display:flex;gap:16px">
+<div style="flex:1;display:flex;flex-direction:column"><span style="font-size:13px;color:#C9CDC2">Projected ARV</span><span class="disp" style="font-size:21px;color:#F6C21B;letter-spacing:-0.01em">$950K to $1M</span></div>
+<div style="flex:1;display:flex;flex-direction:column"><span style="font-size:13px;color:#C9CDC2">Capital needed</span><span class="disp" style="font-size:21px;letter-spacing:-0.01em">$200K</span></div>
+</div>
+<a href="#/contact" style="border:2px solid #FFFFFF;font-weight:700;font-size:15px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="padding:16px;border-top:2px solid #3A4046;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><span class="disp" style="font-size:21px;letter-spacing:-0.01em">Bridgewater, NJ</span><span style="color:#C9CDC2;font-size:14px">Single Family</span></div>
+<div style="display:flex;gap:16px">
+<div style="flex:1;display:flex;flex-direction:column"><span style="font-size:13px;color:#C9CDC2">Projected ARV</span><span class="disp" style="font-size:21px;color:#F6C21B;letter-spacing:-0.01em">$1.2M</span></div>
+<div style="flex:1;display:flex;flex-direction:column"><span style="font-size:13px;color:#C9CDC2">Capital needed</span><span class="disp" style="font-size:21px;letter-spacing:-0.01em">$150K</span></div>
+</div>
+<a href="#/contact" style="border:2px solid #FFFFFF;font-weight:700;font-size:15px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+<div style="padding:16px;border-top:2px solid #3A4046;display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><span class="disp" style="font-size:21px;letter-spacing:-0.01em">Westfield, NJ</span><span style="color:#C9CDC2;font-size:14px">Single Family</span></div>
+<div style="display:flex;gap:16px">
+<div style="flex:1;display:flex;flex-direction:column"><span style="font-size:13px;color:#C9CDC2">Projected ARV</span><span class="disp" style="font-size:21px;color:#F6C21B;letter-spacing:-0.01em">$2.25M</span></div>
+<div style="flex:1;display:flex;flex-direction:column"><span style="font-size:13px;color:#C9CDC2">Capital needed</span><span class="disp" style="font-size:21px;letter-spacing:-0.01em">$200K</span></div>
+</div>
+<a href="#/contact" style="border:2px solid #FFFFFF;font-weight:700;font-size:15px;height:44px;border-radius:8px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;text-decoration:none">Request details</a>
+</div>
+
+</div>
+<a href="#/invest" style="background:#F6C21B;color:#15181B;font-weight:800;height:52px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none">See all 8 opportunities</a>
+</div>
+
+<!-- FAQ -->
+<div style="background:#FFFFFF;padding:56px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:4px">
+<h2 class="disp" style="margin:0 0 14px;font-size:34px">Questions we hear most.</h2>
+
+<div style="border-top:3px solid #15181B;padding:18px 0;display:flex;flex-direction:column;gap:6px">
+<h3 class="disp" style="margin:0;font-size:21px;letter-spacing:-0.01em;line-height:1.15">Do I have to make repairs?</h3>
+<p style="margin:0;color:#33383D;font-size:16px">No. We buy houses in any condition, so you can sell as-is.</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:18px 0;display:flex;flex-direction:column;gap:6px">
+<h3 class="disp" style="margin:0;font-size:21px;letter-spacing:-0.01em;line-height:1.15">Are there any fees or commissions?</h3>
+<p style="margin:0;color:#33383D;font-size:16px">No. Our offer is transparent, with no hidden fees or surprises.</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:18px 0;display:flex;flex-direction:column;gap:6px">
+<h3 class="disp" style="margin:0;font-size:21px;letter-spacing:-0.01em;line-height:1.15">How fast can we close?</h3>
+<p style="margin:0;color:#33383D;font-size:16px">On your timeline. If you need to move quickly, we can.</p>
+</div>
+
+<div style="border-top:3px solid #15181B;padding:18px 0;display:flex;flex-direction:column;gap:6px">
+<h3 class="disp" style="margin:0;font-size:21px;letter-spacing:-0.01em;line-height:1.15">Is there any obligation?</h3>
+<p style="margin:0;color:#33383D;font-size:16px">No. There is no obligation to sell.</p>
+</div>
+
+</div>
+
+<!-- Final call -->
+<div style="background:#F6C21B;border-top:2px solid #15181B;padding:48px 20px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
+<div class="disp" style="font-size:28px">Call us today.</div>
+<a href="tel:7327810111" class="disp" style="font-size:46px;letter-spacing:-0.03em;line-height:0.95">732.781.0111</a>
+<span style="font-size:17px">Our team will contact you promptly.</span>
+<a href="#/contact" style="background:#15181B;color:#FFFFFF;font-weight:700;height:52px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-decoration:none;margin-top:8px">Or send a message</a>
+</div>
+
+<!-- Footer -->
+<div style="background:#22262B;color:#C9CDC2;font-size:15px;padding:40px 20px 28px;box-sizing:border-box;display:flex;flex-direction:column;gap:26px">
+<div style="display:flex;flex-direction:column;gap:10px">
+<div class="disp" style="font-size:22px;color:#FFFFFF;letter-spacing:-0.01em">Transform Group</div>
+<p style="margin:0;font-size:14px">We help homeowners with flexible solutions, whether through a fast, hassle-free cash sale or by listing with our Society Real Estate licensed agents. We also offer investment opportunities for buyers looking to grow their portfolio.</p>
+</div>
+<div style="display:flex;gap:40px">
+<div style="display:flex;flex-direction:column;gap:2px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Explore</div>
+<a href="#/sell" style="min-height:36px;display:flex;align-items:center">Sell your home</a><a href="#/invest" style="min-height:36px;display:flex;align-items:center">Investing</a><a href="#/about" style="min-height:36px;display:flex;align-items:center">About and team</a><a href="#/contact" style="min-height:36px;display:flex;align-items:center">Contact</a>
+</div>
+<div style="display:flex;flex-direction:column;gap:2px">
+<div style="font-weight:700;color:#FFFFFF;margin-bottom:6px">Customer care</div>
+<a href="tel:7327810111" style="color:#FFFFFF;font-weight:700;min-height:36px;display:flex;align-items:center">732.781.0111</a>
+<a href="https://www.instagram.com/thetransformgroupnj/" style="min-height:36px;display:flex;align-items:center">Instagram</a><a href="https://www.facebook.com/profile.php?id=61559072283955" style="min-height:36px;display:flex;align-items:center">Facebook</a>
+</div>
+</div>
+<div style="border-top:2px solid #3A4046;padding-top:18px;font-size:14px;display:flex;flex-direction:column;gap:4px">
+<span>© The Transform Group LLC</span>
+<a href="https://transformgroupnj.com/privacy-policy">Privacy Policy and Terms</a>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</main>
+
+<script>
+(function () {
+  var titles = {"home":"Home","sell":"Sell your home","invest":"Invest","about":"About and team","contact":"Contact","mobile":"Mobile view"};
+  function show() {
+    var h = (location.hash || '#/home').replace('#/', '');
+    var id = titles[h] ? h : 'home';
+    document.querySelectorAll('main.page').forEach(function (m) { m.hidden = m.id !== 'page-' + id; });
+    document.querySelectorAll('#previewbar nav a').forEach(function (a) { a.classList.toggle('on', a.getAttribute('data-nav') === id); });
+    document.title = titles[id] + ' | The Transform Group concept';
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener('hashchange', show);
+  show();
+})();
+</script>
+</body>
+</html>
